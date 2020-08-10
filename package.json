@@ -7,7 +7,8 @@
     "start": "cross-env NODE_ENV=development electron .",
     "dev": "rollup -cw",
     "build": "rollup -c",
-    "postinstall": "electron-builder install-app-deps"
+    "postinstall": "electron-builder install-app-deps",
+    "validate": "svelte-check"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
@@ -30,6 +31,7 @@
     "rollup": "^2.23.1",
     "rollup-plugin-svelte": "^5.2.3",
     "svelte": "^3.24.1",
+    "svelte-check": "^1.0.11",
     "tslib": "^2.0.1",
     "typescript": "^3.9.7"
   },
