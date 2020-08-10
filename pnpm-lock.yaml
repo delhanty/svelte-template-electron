@@ -13,6 +13,7 @@ devDependencies:
   rollup-plugin-svelte: 5.2.3_rollup@2.23.1+svelte@3.24.1
   svelte: 3.24.1
   svelte-check: 1.0.11
+  svelte-preprocess: 4.0.10_svelte@3.24.1+typescript@3.9.7
   tslib: 2.0.1
   typescript: 3.9.7
 lockfileVersion: 5.1
@@ -2090,6 +2091,55 @@ packages:
     requiresBuild: true
     resolution:
       integrity: sha512-OX8a7drmlYcX/bLKbtRTvcc0lYu5Ub78D4B/GVxac2zeyrj1e5vEJU6BsxFbc/8kFDqI6BgsCLZAqsFDr/KrDQ==
+  /svelte-preprocess/4.0.10_svelte@3.24.1+typescript@3.9.7:
+    dependencies:
+      '@types/pug': 2.0.4
+      '@types/sass': 1.16.0
+      detect-indent: 6.0.0
+      strip-indent: 3.0.0
+      svelte: 3.24.1
+      typescript: 3.9.7
+    dev: true
+    engines:
+      node: '>= 9.11.2'
+    peerDependencies:
+      '@babel/core': ^7.10.2
+      coffeescript: ^2.5.1
+      less: ^3.11.3
+      node-sass: '*'
+      postcss: ^7.0.32
+      postcss-load-config: ^2.1.0
+      pug: ^3.0.0
+      sass: ^1.26.8
+      stylus: ^0.54.7
+      svelte: ^3.23.0
+      typescript: ^3.9.5
+    peerDependenciesMeta:
+      '@babel/core':
+        optional: true
+      coffeescript:
+        optional: true
+      less:
+        optional: true
+      node-sass:
+        optional: true
+      postcss:
+        optional: true
+      postcss-load-config:
+        optional: true
+      pug:
+        optional: true
+      sass:
+        optional: true
+      stylus:
+        optional: true
+      svelte:
+        optional: true
+      typescript:
+        optional: true
+    requiresBuild: true
+    resolution:
+      integrity: sha512-Oafr9EzQkr6uf5PAN7McWmmShxmuowOe8Lsbvjt7NFncqVYDvkLBoHwSq/z1n2+APhowDPhyQD2hyCVs30cJwA==
   /svelte/3.24.0:
     dev: true
     engines:
@@ -2434,5 +2484,6 @@ specifiers:
   rollup-plugin-svelte: ^5.2.3
   svelte: ^3.24.1
   svelte-check: ^1.0.11
+  svelte-preprocess: ^4.0.10
   tslib: ^2.0.1
   typescript: ^3.9.7
