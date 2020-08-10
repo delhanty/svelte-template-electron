@@ -5,6 +5,8 @@ import json from '@rollup/plugin-json';
 import sveltePreprocess from 'svelte-preprocess';
 import typescript from '@rollup/plugin-typescript';
 
+const production = !process.env.ROLLUP_WATCH;
+
 export default {
 	input: ['src/main.ts', 'src/renderer.ts'],
 
@@ -24,7 +26,7 @@ export default {
 		}),
 		commonjs(),
 		json(),
-		typescript({ typescript: require('typescript') })
+		typescript({ sourceMap: !production }),
 	],
 
 	external: [
