@@ -2,10 +2,10 @@ dependencies:
   chokidar: 3.4.2
   cross-env: 7.0.2
 devDependencies:
-  '@rollup/plugin-commonjs': 12.0.0_rollup@2.23.1
+  '@rollup/plugin-commonjs': 14.0.0_rollup@2.23.1
   '@rollup/plugin-json': 4.1.0_rollup@2.23.1
   '@rollup/plugin-node-resolve': 8.4.0_rollup@2.23.1
-  '@rollup/plugin-typescript': 4.1.2_704557a0af427d77db6d8c33d74de5aa
+  '@rollup/plugin-typescript': 5.0.2_704557a0af427d77db6d8c33d74de5aa
   '@tsconfig/svelte': 1.0.8
   electron: 9.2.0
   electron-builder: 22.8.0
@@ -46,7 +46,7 @@ packages:
       global-tunnel-ng: 2.7.1
     resolution:
       integrity: sha512-vAuHUbfvBQpYTJ5wB7uVIDq5c/Ry0fiTBMs7lnEYAo/qXXppIVcWdfBr57u6eRnKdVso7KSiH6p/LbQAG6Izrg==
-  /@rollup/plugin-commonjs/12.0.0_rollup@2.23.1:
+  /@rollup/plugin-commonjs/14.0.0_rollup@2.23.1:
     dependencies:
       '@rollup/pluginutils': 3.1.0_rollup@2.23.1
       commondir: 1.0.1
@@ -62,7 +62,7 @@ packages:
     peerDependencies:
       rollup: ^2.3.4
     resolution:
-      integrity: sha512-8+mDQt1QUmN+4Y9D3yCG8AJNewuTSLYPJVzKKUZ+lGeQrI+bV12Tc5HCyt2WdlnG6ihIL/DPbKRJlB40DX40mw==
+      integrity: sha512-+PSmD9ePwTAeU106i9FRdc+Zb3XUWyW26mo5Atr2mk82hor8+nPwkztEjFo8/B1fJKfaQDg9aM2bzQkjhi7zOw==
   /@rollup/plugin-json/4.1.0_rollup@2.23.1:
     dependencies:
       '@rollup/pluginutils': 3.1.0_rollup@2.23.1
@@ -89,7 +89,7 @@ packages:
       rollup: ^1.20.0||^2.0.0
     resolution:
       integrity: sha512-LFqKdRLn0ShtQyf6SBYO69bGE1upV6wUhBX0vFOUnLAyzx5cwp8svA0eHUnu8+YU57XOkrMtfG63QOpQx25pHQ==
-  /@rollup/plugin-typescript/4.1.2_704557a0af427d77db6d8c33d74de5aa:
+  /@rollup/plugin-typescript/5.0.2_704557a0af427d77db6d8c33d74de5aa:
     dependencies:
       '@rollup/pluginutils': 3.1.0_rollup@2.23.1
       resolve: 1.17.0
@@ -100,11 +100,11 @@ packages:
     engines:
       node: '>=8.0.0'
     peerDependencies:
-      rollup: ^1.20.0||^2.0.0
+      rollup: ^2.14.0
       tslib: '*'
-      typescript: '>=2.1.0'
+      typescript: '>=3.4.0'
     resolution:
-      integrity: sha512-+7UlGat/99e2JbmGNnIauxwEhYLwrL7adO/tSJxUN57xrrS3Ps+ZzYpLCDGPZJ57j+ZJTZLLN89KXW9JMEB+jg==
+      integrity: sha512-CkS028Itwjqm1uLbFVfpJgtVtnNvZ+og/m6UlNRR5wOOnNTWPcVQzOu5xGdEX+WWJxdvWIqUq2uR/RBt2ZipWg==
   /@rollup/pluginutils/3.1.0_rollup@2.23.1:
     dependencies:
       '@types/estree': 0.0.39
@@ -2066,17 +2066,17 @@ packages:
     resolution:
       integrity: sha1-x+sXyT4RLLEIb6bY5R+wZnt5pfk=
 specifiers:
-  '@rollup/plugin-commonjs': ^12.0.0
+  '@rollup/plugin-commonjs': ^14.0.0
   '@rollup/plugin-json': ^4.1.0
-  '@rollup/plugin-node-resolve': ^8.0.0
-  '@rollup/plugin-typescript': ^4.0.0
+  '@rollup/plugin-node-resolve': ^8.4.0
+  '@rollup/plugin-typescript': ^5.0.2
   '@tsconfig/svelte': ^1.0.8
   chokidar: ^3.4.2
   cross-env: ^7.0.2
   electron: ^9.2.0
   electron-builder: ^22.8.0
   rollup: ^2.23.1
-  rollup-plugin-svelte: ^5.0.3
-  svelte: ^3.3.0
+  rollup-plugin-svelte: ^5.2.3
+  svelte: ^3.24.1
   tslib: ^2.0.1
   typescript: ^3.9.7
