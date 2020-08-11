@@ -4,7 +4,7 @@ import resolve from '@rollup/plugin-node-resolve';
 import json from '@rollup/plugin-json';
 import { terser } from 'rollup-plugin-terser';
 import sveltePreprocess from 'svelte-preprocess';
-import typescript from '@rollup/plugin-typescript';
+import typescript from 'rollup-plugin-typescript2';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -39,6 +39,7 @@ export default {
 	},
 
 	plugins: [
+        // Must be before rollup-plugin-typescript2 in the plugin list
 		resolve(),
 		svelte({
 			// enable run-time checks when not in production
