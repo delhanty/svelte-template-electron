@@ -26,7 +26,13 @@ function launch() {
 		height: 600,
 		minWidth: 600,
 		backgroundColor: 'white',
-		titleBarStyle: 'hidden'
+		titleBarStyle: 'hidden',
+        webPreferences: {
+          // Need `contextIslation` and `worldSafeExecuteJavaScript` both set
+          // to silence recent `webFrame.executeJavaScript` warnings.
+          contextIsolation:           true,
+          worldSafeExecuteJavaScript: true
+        },
 	});
 
 	win.loadURL(
